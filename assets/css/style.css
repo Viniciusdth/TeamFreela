@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  background: #ffffff;
+  height: 1000px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/*
+. {
+  height: 471px;
+  display: fixed;
+  background: black;
+} */
+
+.coluna1 {
+  position: absolute;
+  left: 90px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.coluna2 {
+  position: sticky;
+  bottom: 0;
+  top: 0;
+  left: 250px;
+  display: ;
+}
+
+main {
+  position: absolute;
+
+}
+
+
+@media (min-width: 576px) {
+  .colera {
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
