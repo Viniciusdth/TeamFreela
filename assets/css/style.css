@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-style: normal;
   background: #ffffff;
-  height: 1000px;
+  height: 10000px;
   position: relative;
 }
 
@@ -12,49 +12,99 @@ body {
   /* border: 1px solid red; */
 }
 
-/*
-. {
-  height: 471px;
-  display: fixed;
-  background: black;
-} */
-
 .coluna1 {
-  position: absolute;
+  position: fixed;
   left: 90px;
   bottom: 0;
   top: 0;
   left: 0;
+  background: #1b2c3b;
+  width: auto;
+}
+
+.image {
+  content: url("https://picsum.photos/199/200");
+  height: 200px;
+  width: auto;
 }
 
 .coluna2 {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   top: 0;
-  left: 250px;
-  display: ;
+  left: 200px;
+  background: #11517c;
+  z-index: 0;
+  width: auto;
 }
 
-main {
-  position: absolute;
-
-}
-
-
-@media (min-width: 576px) {
-  .colera {
+@media (max-width: 576px) {
+  .image {
+    content: url("");
     height: auto;
+  }
+  main {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 577px) {
+  .coluna1 {
+    position: fixed;
+    left: 90px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: #1b2c3b;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (max-width: 768px) {
+  .coluna1 {
+    position: sticky;
+    left: 90px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .coluna2 {
+    display: none;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .coluna1 {
+    position: fixed;
+    left: 90px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: #1b2c3b;
+    width: auto;
+  }
+}
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {}
+
+
+@media (min-width: 1024px) {
+  .coluna2 {
+    left: 171px;
+  }
+
+
+
+
+@media (min-width: 1440px) {
+  .coluna2 {
+    left: 199px;
+  }
+}
