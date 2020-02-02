@@ -121,18 +121,6 @@ ul li a:hover {
   text-decoration: none;
 }
 
-.header-2 {
-  width: 50%;
-}
-
-.header-2-s {
-  font-size: 12px;
-}
-
-.header-2-h4 {
-  font-size: 30px;
-}
-
 .drop-esp {
   width: 50%;
   margin: 10px;
@@ -146,6 +134,30 @@ ul li a:hover {
   max-width: 450px;
   margin: 40px 0 0 12px;
   align-self: center;
+}
+
+.perfilProfissional {
+  margin: 0 0 0 150px;
+}
+
+.imagemPerfilProfissional {
+  content: url("../img/icon-1.png");
+}
+
+
+.tituloPerfilProfissional, .textoPerfilProfissional {
+  align-self: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.subTextoPerfilProfissional {
+  width: 450px;
+}
+
+
+.card {
+  margin: 0 0 0 150px!important;
 }
 
 .texto-2 {
